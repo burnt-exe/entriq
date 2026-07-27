@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Entriq is a South African digital raffle platform for schools, charities, clubs and community organisations." />
+  <meta name="theme-color" content="#123a2f" />
+  <title>Entriq | Trusted Digital Raffles</title>
+  <link rel="icon" href="./assets/icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Entriq home">
+      <img src="./assets/logo.svg" alt="" width="36" height="36" />
+      <span>Entriq</span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#raffles">Browse raffles</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#compliance">Compliance</a>
+      <a href="./login.html">Sign in</a>
+      <a class="button button-small" href="./signup.html">Start a raffle</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">South African fundraising infrastructure</p>
+        <h1>Trusted digital raffles for schools and communities.</h1>
+        <p class="lead">Create, promote and manage auditable fundraising raffles with transparent ticketing, role-based portals and South African compliance workflows.</p>
+        <div class="actions">
+          <a class="button" href="./signup.html?role=provider">Create a raffle</a>
+          <a class="button button-secondary" href="#raffles">Find a raffle</a>
+        </div>
+        <div class="trust-row" aria-label="Platform capabilities">
+          <span>POPIA-aware</span><span>ZAR payments ready</span><span>Auditable draws</span><span>Multi-tenant</span>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="Featured raffle summary">
+        <div class="status-row"><span class="badge active">Active</span><span>Verified provider</span></div>
+        <h2>Community Learning Lab Fund</h2>
+        <p>Help equip a school computer laboratory with devices, networking and learning software.</p>
+        <div class="metric-grid">
+          <div><strong>R 82 450</strong><span>Raised</span></div>
+          <div><strong>1 649</strong><span>Tickets sold</span></div>
+          <div><strong>12 days</strong><span>Until draw</span></div>
+        </div>
+        <div class="progress" aria-label="82 percent funded"><span style="width:82%"></span></div>
+        <a class="button full" href="./raffle.html">View raffle</a>
+      </aside>
+    </section>
+
+    <section class="stats section compact" aria-label="Platform statistics">
+      <div><strong>120+</strong><span>Approved organisations</span></div>
+      <div><strong>R 4.8m</strong><span>Funds facilitated</span></div>
+      <div><strong>98.7%</strong><span>Payment success rate</span></div>
+      <div><strong>100%</strong><span>Draw audit trail coverage</span></div>
+    </section>
+
+    <section id="raffles" class="section">
+      <div class="section-heading">
+        <div><p class="eyebrow">Live opportunities</p><h2>Featured raffles</h2></div>
+        <label class="search"><span class="sr-only">Search raffles</span><input id="raffle-search" type="search" placeholder="Search schools, causes or provinces" /></label>
+      </div>
+      <div id="raffle-grid" class="card-grid"></div>
+      <p id="empty-state" class="empty" hidden>No raffles match your search.</p>
+    </section>
+
+    <section id="how-it-works" class="section surface">
+      <p class="eyebrow">Simple and controlled</p>
+      <h2>How Entriq works</h2>
+      <div class="steps">
+        <article><span>01</span><h3>Verify the organisation</h3><p>Submit organisation, banking, governance and required raffle classification evidence.</p></article>
+        <article><span>02</span><h3>Build and publish</h3><p>Configure tickets, prizes, dates, eligibility, terms, payment rules and promotional links.</p></article>
+        <article><span>03</span><h3>Sell and reconcile</h3><p>Issue digital tickets, monitor payments, reconcile funds and export operational reports.</p></article>
+        <article><span>04</span><h3>Draw transparently</h3><p>Close inventory, run an auditable draw, verify winners and retain evidence for review.</p></article>
+      </div>
+    </section>
+
+    <section class="section portals">
+      <div><p class="eyebrow">Role-based experience</p><h2>One platform, three controlled portals</h2></div>
+      <div class="portal-grid">
+        <article><h3>Raffle Provider</h3><p>Organisation onboarding, raffle creation, ticket sales, draws, winners, payouts, documents and reporting.</p><a href="./provider.html">Preview provider portal</a></article>
+        <article><h3>Ticket Holder</h3><p>Discover verified raffles, purchase tickets, access receipts, track draws and manage privacy preferences.</p><a href="./holder.html">Preview ticket portal</a></article>
+        <article><h3>Platform Administrator</h3><p>Approve providers and raffles, oversee finance, compliance, risk, disputes, audit logs and platform settings.</p><a href="./admin.html">Preview admin portal</a></article>
+      </div>
+    </section>
+
+    <section id="compliance" class="section compliance">
+      <div>
+        <p class="eyebrow">Compliance by design</p>
+        <h2>Built for controlled fundraising operations.</h2>
+        <p>Entriq includes configurable NLC registration fields, school governing-body approval evidence, POPIA consent records, guardian controls, bank verification and immutable operational audit events.</p>
+      </div>
+      <div class="notice"><strong>Important</strong><p>This platform facilitates digital fundraising. Operators must obtain all required legal permissions before running a raffle.</p></div>
+    </section>
+
+    <section class="section cta">
+      <h2>Ready to digitise your fundraising?</h2>
+      <p>Launch a controlled raffle experience for your school, charity, sports club, NGO or community organisation.</p>
+      <a class="button" href="./signup.html?role=provider">Create an organisation account</a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#home"><img src="./assets/logo.svg" alt="" width="30" height="30" /><span>Entriq</span></a>
+    <p>Digital raffle infrastructure for South African organisations.</p>
+    <div><a href="./terms.html">Terms</a><a href="./privacy.html">Privacy</a><a href="#compliance">Compliance</a></div>
+  </footer>
+  <script src="./assets/app.js" defer></script>
+</body>
+</html>
